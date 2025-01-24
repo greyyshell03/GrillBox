@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="menu.css">
+        <title>Samgyup Menu</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/grillbox.png?v=1683434062821">
+        <script src="https://kit.fontawesome.com/97e495b249.js" crossorigin="anonymous"></script>
+    </head>
+  <style>
+    /* Cart item container */
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Product image */
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+/* Product name */
+.cart-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Product description */
+.cart-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Product price */
+.cart-item .price {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+  </style>
+<body>
+    <header id="main-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="current" href="sample.html">Menu</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="cart-items-container"></div>
+
+
+
+           
+    <section class="footnav">
+        <ul>
+            <li><a href="#">faqs</a></li>
+            <li><a href="#top">go back to top</a></li>
+            <li><a href="aboutus.html">about us</a></li>
+        </ul>
+    </section>
+  
+    <footer>
+        <div>
+            <div class="left">
+                <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/grillbox%20logo.png?v=1683434071755" alt="">
+                    <div class="word-wrap">
+                        <p>Copyright © 2023 Grill Box <br>
+                        contact@grillbox.com<br>
+                        938 Aurora Blvd., Quezon City, Philippines<br>
+                        Web Design by Greyyshell</p>
+                    </div>
+            </div>
+            <div class="right">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+     
+
+  
+
+
+
+
+    <script src="cart.js"></script>
+    <script>
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      displayCartItems(cart);
+    </script>
+
+
+    
+</body>
+</html>

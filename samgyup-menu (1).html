@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="menu.css">
+ 
+    <link rel="stylesheet" href="style_samgyup.css">
+    <title>Samgyup Menu</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/grillbox.png?v=1683434062821">
+    <script src="https://kit.fontawesome.com/97e495b249.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <header id="main-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="current" href="#">Menu</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="carouselVSE" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselVSE" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselVSE" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselVSE" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!--slideshow banners-->
+        <!--slideshow banners-->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/img1.png?v=1683435976385" alt="banner1" class="d-block w-100" >
+            
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/img1.png?v=1683435976385" alt="banner2" class="d-block w-100">  
+          </div>
+
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/img1.png?v=1683435976385" alt="banner3" class="d-block w-100">
+   
+          </div>
+        </div>    
+
+
+        <!--controls-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselVSE" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselVSE" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <section id="menu">
+        <div class="navbar-menu">
+          <nav>
+            <ul>
+              <li class="currents"><a href="">Samgyupsal</a></li>
+              <li><a href="hotpot-menu.html">Hotpot</a></li>
+              <li><a href="kimbap-menu.html">Kimbap</a></li>
+              <li><a href="chicken-menu.html">Chicken</a></li>
+              <li><a href="noodles-menu.html">Noodles</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="cart-icon">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </div>
+        
+        <div class="cart-container">
+          <div class="cart-items"></div>
+          <div class="cart-total"></div>
+        </div>
+        
+        
+
+        <div class="section1">
+            <h2 id="meat">Meats</h2>
+            <div class="meat-categories" id="meat">
+               
+              <div class="box-meat" data-product-id="1">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/pork.png?v=1683436020410"  ></div>
+                    <h3 >Pork</h3>
+                    <div class="modal-overlay" id="modal-1">
+                        <div class="modal-content">
+                          <h3 class="product-name"> Pork Samgyupsal Cut</h3>
+                          <img class="product-image"src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/pork.png?v=1683436020410">
+                          <p class="product-description">  Plain (1kg) </p>
+                          <p class="product-price">₱ 480.00</p>
+                          <div class="quantity">
+                            <button class="minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="plus">+</button>
+                          </div>
+                          <button class="add-to-cart" >Add to Cart</button>
+                          <a href="samgyup-menu.html" class="close-button">&times;</a>
+                        </div>
+                      </div>
+               </div>
+              
+              
+                <div class="box-meat" data-product-id="2" id="2">
+                    <div class="image"><img  src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/beef.jpg?v=1683441138090" ></div>
+                    <h3>Beef</h3>
+                    <div class="modal-overlay" id="modal-2" >
+                        <div class="modal-content">
+                          <h3 class="product-name"> Beef Samgyupsal Meat</h3>
+                          <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/beef.jpg?v=1683441138090">
+                          <p class="product-description">500g</p>
+                          <p class="product-price">₱ 350.00</p>
+                          <div class="quantity">
+                            <button class="minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="plus">+</button>
+                          </div>
+                          <button class="add-to-cart">Add to Cart</button>
+                          <a href="samgyup-menu.html" class="close-button">&times;</a>
+                        </div>
+                      </div>
+                    
+                </div>
+                
+                
+                <div class="box-meat" data-product-id="3" id="3">
+                  <div class="image"><img  src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/chicken.png?v=1683436013009" ></div>
+                  <h3>Chicken</h3>
+                  <div class="modal-overlay" id="modal-3" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/beef.jpg?v=1683441138090">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+                  
+                </div>
+
+                <div class="box-meat" data-product-id="4" id="4">
+                  <div class="image"><img  src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/beef-chicken.jpg?v=1683436027801" ></div>
+                  <h3>Pork & Beef</h3>
+                  <div class="modal-overlay" id="modal-4" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/beef-chicken.jpg?v=1683436027801">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="box-meat" data-product-id="5" id="5">
+                  <div class="image"><img  src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/beef-chicken.jpg?v=1683436027801" ></div>
+                  <h3>Beef & Chicken</h3>
+                  <div class="modal-overlay" id="modal-5" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/beef-chicken.jpg?v=1683436027801">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+                
+          </div>
+
+          <div class="container meats">
+              <h2>Side-dishes</h2>
+                <div class="meat-categories">
+                <div class="box-meat" data-product-id="6" id="6">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/japchae.jpg?v=1683436017392" alt=""></div>
+                    <h3>Japchae</h3>
+
+                    <div class="modal-overlay" id="modal-6" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/japchae.jpg?v=1683436017392">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="box-meat" data-product-id="7" id="7">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/kimchii.jpg?v=1683441277727" alt=""></div>
+                    <h3>Kimchi</h3>
+
+                    <div class="modal-overlay" id="modal-7" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/kimchii.jpg?v=1683441277727">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="box-meat" data-product-id="8" id="8">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/sfish-cake.jpg?v=1683441337628" alt=""></div>
+                    <h3>Stir fried fish cake</h3>
+                   
+                    <div class="modal-overlay" id="modal-8" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/sfish-cake.jpg?v=1683441337628">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="box-meat" data-product-id="9" id="9">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/steamed-egg.jpg?v=1683436025607" alt=""></div>
+                    <h3>Steamed egg</h3>
+
+                    <div class="modal-overlay" id="modal-9" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/steamed-egg.jpg?v=1683436025607">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="box-meat" data-product-id="10" id="10">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/potato-marbles.jpg?v=1683436022617"alt=""></div>
+                    <h3>Potato Marbles</h3>
+
+                    <div class="modal-overlay" id="modal-10" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/potato-marbles.jpg?v=1683436022617">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+
+
+                </div>
+                <div class="box-meat" data-product-id="11" id="11">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/fresh%20lettuce.jpg?v=1683436014982"onclick="showOverlay()" alt=""></div>
+                    <h3>Fresh Lettuce</h3>
+
+                    <div class="modal-overlay" id="modal-11" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/fresh%20lettuce.jpg?v=1683436014982">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+
+
+                </div>
+                <div class="box-meat" data-product-id="12" id="12">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/pickled-raddish.jpg?v=1683436019442" alt=""></div>
+                    <h3>Pickled Radish</h3>
+
+                    <div class="modal-overlay" id="modal-12" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/pickled-raddish.jpg?v=1683436019442">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+                </div>
+                </div>
+          </div>
+
+          <div class="container meats">
+                <h2>Sauces</h2>
+                <div class="meat-categories">
+                <div class="box-meat" data-product-id="13" id="13">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/cheese.jpeg?v=1683436028757" alt=""></div>
+                    <h3>Cheese</h3>
+
+                    <div class="modal-overlay" id="modal-13" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/cheese.jpeg?v=1683436028757">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+
+
+                </div>
+                <div class="box-meat" data-product-id="14" id="14">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/sesame-oil.jpg?v=1683436023682"alt=""></div>
+                    <h3>Sesame oil</h3>
+
+                    <div class="modal-overlay" id="modal-14" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/sesame-oil.jpg?v=1683436023682">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+
+                </div>
+                <div class="box-meat" data-product-id="15" id="15">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/garlic-mayo.jpg?v=1683436015934"alt=""></div>
+                    <h3>Garlic Mayonnaise</h3>
+
+                    <div class="modal-overlay" id="modal-15" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/garlic-mayo.jpg?v=1683436015934">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+
+
+                </div>
+                <div class="box-meat" data-product-id="16" id="16">
+                    <div class="image"><img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/ssamjang.jpg?v=1683436024672" alt=""></div>
+                    <h3>Ssamjang</h3>
+
+                    <div class="modal-overlay" id="modal-16" >
+                      <div class="modal-content">
+                        <h3 class="product-name"> Description of Product 1 </h3>
+                        <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/ssamjang.jpg?v=1683436024672">
+                        <p class="product-description">500g</p>
+                        <p class="product-price">₱ 350.00</p>
+                        <div class="quantity">
+                          <button class="minus">-</button>
+                          <input type="number" class="quantity-input" value="1" min="1">
+                          <button class="plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <a href="samgyup-menu.html" class="close-button">&times;</a>
+                      </div>
+                    </div>
+
+
+                </div>
+                </div>
+                        
+          </div>        
+        </div>
+  
+      </section>
+      
+      
+    <section class="footnav">
+      <ul>
+          <li><a href="#">faqs</a></li>
+          <li><a href="#top">go back to top</a></li>
+          <li><a href="aboutus.html">about us</a></li>
+      </ul>
+  </section>
+
+  <footer>
+      <div>
+          <div class="left">
+              <img src="https://cdn.glitch.global/f41f087d-0e54-4731-b777-c42d762f9596/grillbox%20logo.png?v=1683434071755" alt="">
+                  <div class="word-wrap">
+                      <p>Copyright © 2023 Grill Box <br>
+                      contact@grillbox.com<br>
+                      938 Aurora Blvd., Quezon City, Philippines<br>
+                      Web Design by Greyyshell</p>
+                  </div>
+          </div>
+          <div class="right">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-regular fa-envelope"></i></a>
+          </div>
+      </div>
+  </footer>
+
+
+       <script src="menu.js"></script>
+       <script src="button.js"></script>
+      
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      
+</body>
+</html>
